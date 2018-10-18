@@ -142,10 +142,9 @@ function resetBoard() {
 function incrementPlayer() {
     var $score = $('p span.' + player + 'Score');
     if (parseInt($score.text()) === 0) {
-
         $('.' + player + 'Wins').html(player.toUpperCase() + ' has <span class="' + player + 'Score">1</span> point!');
     } else if (parseInt($score.text()) === 1) {
-        $('.' + player + 'Wins').html(player.toUpperCase() + ' has <span class="' + player + 'Score">2</span> point!');
+        $('.' + player + 'Wins').html(player.toUpperCase() + ' has <span class="' + player + 'Score">2</span> points!');
     } else {
         $score.text(parseInt($score.text()) + 1);
     }
