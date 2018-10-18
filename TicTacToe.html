@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TicTacToe</title>
+  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <link rel="stylesheet" href="tictactoeStyle.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="container">
+    <h1 class="center">
+      Tic Tac Toe game
+    </h1>
+    <h2 class="center">
+      <span class="playerTurn">X</span>, it's your turn!
+    </h2>
+    <table class="board">
+      <tbody>
+        <tr class="row">
+          <td id="box1" class="cube">
+            <img src="O.png" alt="O.png" class="oImage">
+            <img src="X.png" alt="X.png" class="xImage">
+          </td>
+          <td id="box2" class="cube">
+            <img src="O.png" alt="O.png" class="oImage">
+            <img src="X.png" alt="X.png" class="xImage">
+          </td>
+          <td id="box3" class="cube">
+            <img src="O.png" alt="O.png" class="oImage">
+            <img src="X.png" alt="X.png" class="xImage">
+          </td>
+        </tr>
+        <tr class="row">
+          <td id="box4" class="cube">
+            <img src="O.png" alt="O.png" class="oImage">
+            <img src="X.png" alt="X.png" class="xImage">
+          </td>
+          <td id="box5" class="cube">
+            <img src="O.png" alt="O.png" class="oImage">
+            <img src="X.png" alt="X.png" class="xImage">
+          </td>
+          <td id="box6" class="cube">
+            <img src="O.png" alt="O.png" class="oImage">
+            <img src="X.png" alt="X.png" class="xImage">
+          </td>
+        </tr>
+        <tr class="row">
+          <td id="box7" class="cube">
+            <img src="O.png" alt="O.png" class="oImage">
+            <img src="X.png" alt="X.png" class="xImage">
+          </td>
+          <td id="box8" class="cube">
+            <img src="O.png" alt="O.png" class="oImage">
+            <img src="X.png" alt="X.png" class="xImage">
+          </td>
+          <td id="box9" class="cube">
+            <img src="O.png" alt="O.png" class="oImage">
+            <img src="X.png" alt="X.png" class="xImage">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="xWins col-7">X has
+      <span class="xScore">0</span> points!</p>
+    <p class="oWins col-5">O has
+      <span class="oScore">0</span> points!</p>
+    <div class="center">
+      <button id="resetB">play again</button>
+    </div>
+  </div>
+  <script src="tictactoeJs.js"></script>
+</body>
+
+</html>
